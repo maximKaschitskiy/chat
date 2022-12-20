@@ -37,8 +37,6 @@ function App() {
   }
 
   const screenSwitch = () => {
-    console.log(user?.userName === null, history?.length === 0);
-    console.log(!user?.userName === null, history?.length === 0);
     switch (true) {
       case !user?.userName :
         return <Tips hint={'Enter nickname for start messanging'}/>
@@ -49,7 +47,7 @@ function App() {
       default:
         return <Messenges messages={history} />
     }
-}
+  }
 
   const [history, setHistory] = React.useState<History[]>(getStorage(localStorage, "history"));
   const [user, setUser] = React.useState<User>(getStorage(sessionStorage, "user"));
