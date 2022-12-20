@@ -14,7 +14,6 @@ const Chat = ({ handleSubmit, user }: Props) => {
     const [messageInput, setMessageInput] = React.useState<Message>({});
 
     return (
-
         <Form onSubmit={(event) => {
             event.preventDefault();
             if (messageInput?.text) {
@@ -44,7 +43,6 @@ const Chat = ({ handleSubmit, user }: Props) => {
                 </InputWrapper>
             </StyledFormGroup>
         </Form>
-
     );
 }
 

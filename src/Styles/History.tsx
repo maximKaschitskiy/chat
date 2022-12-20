@@ -8,7 +8,8 @@ const StyledList = styled(List)(({ }) => ({
     height: '45%',
     width: '50%',
     alignItems: 'center',
-    overflowY: 'scroll'
+    overflowY: 'scroll',
+    padding: '0'
   }));
 
 export { StyledList };

@@ -11,6 +11,7 @@ import User from './Types/User';
 import Login from './Components/Login';
 import Chat from './Components/Chat';
 import Messenges from './Components/History';
+import Tips from './Components/Tips';
 
 function App() {
 
@@ -34,6 +35,21 @@ function App() {
       );
     }
   }
+
+  const screenSwitch = () => {
+    console.log(user?.userName === null, history?.length === 0);
+    console.log(!user?.userName === null, history?.length === 0);
+    switch (true) {
+      case !user?.userName :
+        return <Tips hint={'Enter nickname for start messanging'}/>
+      case user?.userName === null && history?.length === 0 :
+        return <Tips hint={'Login for start messanging'}/>
+      case !user?.userName === null && history?.length === 0 :
+        return <Tips hint={'Input your message for start messanging'}/>
+      default:
+        return <Messenges messages={history} />
+    }
+}
 
   const [history, setHistory] = React.useState<History[]>(getStorage(localStorage, "history"));
   const [user, setUser] = React.useState<User>(getStorage(sessionStorage, "user"));
@@ -71,7 +87,7 @@ function App() {
         }
         user={user}
       />
-      <Messenges messages={history} />
+      <>{screenSwitch()}</>
       <Chat
         handleSubmit={
           (value: History) => {
@@ -87,8 +103,6 @@ function App() {
         }
         user={user}
       />
-
-
     </AppWrapper>
   );
 }
