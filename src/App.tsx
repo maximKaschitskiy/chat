@@ -65,6 +65,10 @@ function App() {
     }
   }, []);
 
+  React.useEffect(() => {
+    document.title = "Myself chat";
+  }, []);
+
   return (
     <AppWrapper>
       <Typography variant="h5" component="h5">
