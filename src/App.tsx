@@ -64,7 +64,7 @@ function App() {
           }
         }
         handleLogout={
-          ()=> {
+          () => {
             sessionStorage.removeItem("user")
             window.dispatchEvent(new Event('storage'));
           }

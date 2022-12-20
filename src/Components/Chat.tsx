@@ -38,7 +38,9 @@ const Chat = ({ handleSubmit, user }: Props) => {
                         }}
                         placeholder="Hola!"
                     ></StyledInput>
-                    <Button type="submit">Send</Button>
+                    <Button
+                      disabled={user?.userName ? false : true}
+                      type="submit">Send</Button>
                 </InputWrapper>
             </StyledFormGroup>
         </Form>

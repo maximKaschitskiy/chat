@@ -17,7 +17,7 @@ const Messenges = ({ messages }: Props) => {
 
     useEffect(() => {
         bottomRef.current?.scrollIntoView({ block: 'end', behavior: 'smooth' });
-      }, [messages.length]);
+      }, [messages?.length]);
 
     return (
         <StyledList>
