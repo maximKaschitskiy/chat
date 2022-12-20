@@ -39,11 +39,11 @@ function App() {
   const screenSwitch = () => {
     switch (true) {
       case !user?.userName :
-        return <Tips hint={'Enter nickname for start messanging'}/>
+        return <Tips hint={'Enter nickname for start messaging'}/>
       case user?.userName === null && history?.length === 0 :
-        return <Tips hint={'Login for start messanging'}/>
+        return <Tips hint={'Login for start messaging'}/>
       case !user?.userName === null && history?.length === 0 :
-        return <Tips hint={'Input your message for start messanging'}/>
+        return <Tips hint={'Input your message for start messaging'}/>
       default:
         return <Messenges messages={history} />
     }
