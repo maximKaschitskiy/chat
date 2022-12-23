@@ -20,6 +20,7 @@ npm run start
 #### Technologies:
  - Typescript as base
  - React with hooks and functional components
+ - browser storage (local and session) for storing account and history data
  - MUI and emotion/styles for components and layout
  - Nano ID for generate random IDs
  - Moment for date set and processing
