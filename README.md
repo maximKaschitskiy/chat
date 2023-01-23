@@ -1,16 +1,14 @@
-## task for FrontendProduction
+## Chat
 
-### Задание
+### Release:
 
-Необходимо реализовать чат для очень одиноких людей (без серверной части, только UI на reactJS/Vue.js), которые будут общаться сами с собой. Пользователь откроет 2 (или больше) вкладки в браузере, введет разные имена и начнет активную дискуссию (только текстовые сообщения). Имя пользователя должно быть привязано к вкладке (видимо через session storage), история чата глобальна для браузера (можно использовать LocalStorage, kv-storage, IndexedDB). Чат должен поддерживать адаптивную верстку (с использованием bootstrap или другой библиотеки).
-
-### Solution:
+### Description:
 
 ![App screen](https://user-images.githubusercontent.com/67905360/208751384-44a789aa-9988-4915-9ab7-c00b3c88a240.png)
 
-View on GH-pages: https://maximkaschitskiy.github.io/frontend_production-test/
-
 How to run:
+
+Frontend chat app. Browser storage (local and session) uses as database. User can chating with yourself, from two tabs in brouser.
 
 ```
 npm i
