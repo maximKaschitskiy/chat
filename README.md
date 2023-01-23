@@ -2,6 +2,8 @@
 
 ### Release:
 
+https://maximkaschitskiy.github.io/chat/
+
 ### Description:
 
 ![App screen](https://user-images.githubusercontent.com/67905360/208751384-44a789aa-9988-4915-9ab7-c00b3c88a240.png)
