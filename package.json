@@ -1,7 +1,7 @@
 {
-  "name": "frontend_production-test",
+  "name": "chat",
   "version": "0.1.0",
-  "homepage": "https://maximKaschitskiy.github.io/frontend_production-test",
+  "homepage": "https://maximKaschitskiy.github.io/chat",
   "private": true,
   "dependencies": {
     "@emotion/react": "^11.10.5",
